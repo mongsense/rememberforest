@@ -1,0 +1,134 @@
+@charset "utf-8";
+.btn_area {width: 100%; display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; align-items: center; position: relative; z-index: 2;}
+.btn_area .btn { font-size: .9375rem; border-radius: 3px; display: flex; align-items: center; justify-content: center; padding: 15px 35px; background: transparent; position: relative; cursor: pointer; overflow: hidden; transition: all .3s;}
+.btn_area.big .btn {font-size:1.1rem;}
+.btn_area .btn.st00 {background: #006838; color: #fff;}
+.btn_area .btn.st01 {background: #1473e7; color: #fff;}
+.btn_area .btn.st02 {background: #d32f2f; color: #fff;}
+.btn_area .btn.st03 {background: #555; color: #fff;}
+.btn_area .btn.st04 {background: #15875f; color: #fff;}
+.btn_area .btn::after {content: ""; width: 100%; height: 0; position: absolute; left: 0; bottom: 0; z-index: -1; border-top-left-radius: 50%; border-top-right-radius: 50%; transition: all .7s; background: #333;}
+.btn_area .btn.st01:hover {background: #1264c8;}
+.btn_area .btn.st02:hover {background: #bc2a2a;}
+.btn_area .btn.st03:hover {background: #444;}
+.btn_area .btn.st04:hover {background: #178765;}
+
+
+/* 치매의 검사 */
+.cnt_box + .cnt_box {margin-top: 50px;}
+.cnt_box h4.tit {font-size: 20px; font-weight: 600; margin-bottom: 15px;}
+.cnt_box p {font-size: 16px; color: #333;}
+.txt_box {background: #f9f9f9; padding: 30px 50px;}
+.box_tit {font-size: 22px; font-weight: 600; color: #006838; position: relative; padding-left: 13px; margin-bottom: 15px;}
+.box_tit::before {content: ""; background: url(../images/contents/ico_circle.svg) center no-repeat; width: 11px; height: 11px; background-size: cover; position: absolute; left: 0; top: 0;}
+.img_list {width: 100%; display: flex; justify-content: space-between; gap: 30px; margin-top: 15px;}
+.img_list li img {width: 100%;}
+
+
+/*프로그램*/
+.program_img img {width:100%;}
+.program  .refer {display:block;}
+.program  .refer span {font-weight: bold; text-align: center;}
+.program  .refer a {display:block; margin:10px auto; max-width: 500px;border: 1px solid #ddd;padding: 20px;}
+.program  .refer a img {width:100%;}
+
+
+/*안내문구*/
+.info_box { margin-bottom: 50px; border:1px solid #ddd; border-top:1px solid #006838;}
+.info_box .inner {position: relative; padding: 40px 40px 40px 150px;border-radius: 4px;}
+.info_box .inner::before {content: ""; background: url("../images/contents/icon_info.svg") center no-repeat; background-size:35%; background-color:#009688; width:70px; height:70px; border-radius: 50%; position: absolute; left: 40px; top: 50%; transform: translateY(-50%);}
+.info_box .inner h5 {font-size: 1.2rem; line-height: 1.7; margin-bottom: 10px; font-weight: bold; color:#006838;}
+.info_box .inner p {font-size: 1rem; line-height: 1.5; color: #333; font-weight:500;}
+.info_box .inner p span {color: #d32f2f;}
+.info_box .inner p + p {margin-top: 5px;}
+.info_box .inner ul.info_list {margin-top: 10px;}
+.info_box .ineer ul.dot_list li {font-size:1rem;}
+
+/*dot_list*/
+.dot_list li {line-height: 1.5; padding-left: 17px; position: relative; text-align: left;}
+.dot_list li::before {content: ""; width: 3px; height: 3px; border-radius: 50%; background: #333441; position: absolute; left: 4px; top: 10px;}
+.dot_list li + li {margin-top: 5px;}
+.chk_list li {font-size: .9rem; line-height: 1.5; padding-left: 17px; position: relative; text-align: left; margin: 5px 0;}
+.chk_list li::before {content: ""; position: absolute; left: 0; top: 5px; width: 8px; height: 8px; padding: 2px; background: #0091ea url(/resources/images/contents/ico_check.svg) center center no-repeat; background-size: 80%; border-radius: 50%;}
+.chk_list li + li {margin-top: 5px;}
+.dot_list li strong {font-weight:800; color:#000;}
+
+
+/*login*/
+.bg_area{width: 100%;margin:0 auto; padding: 5rem 0;}
+.login h3{font-size: 2rem;padding-bottom: 10px;}
+.login_wrap{width: 600px;margin:0 auto;padding:5%;background: #F7F7F7;box-sizing: border-box;border-radius: 5px;}
+.login_txt{margin-bottom:30px;color: #000; text-align: center;}
+.login_txt p{font-size: 32px;margin-bottom: 8px;font-weight:bold;}
+.login_txt span{display:block;font-size:16px; color:#666;}
+.login_box{display: inline-block;width: 100%;box-sizing: border-box;}
+.login_box label{display: inline-block;width: 120px;font-size: 18px;color: #333;font-weight: 400;box-sizing: border-box;vertical-align: middle;}
+.login_box input{background :#fff;width: 100%;padding: 15px; font-size:15px; border: 0;box-sizing: border-box; margin-bottom:10px;border-radius: 5px;}
+.btn_login{display: block;padding: 15px 0;background-color:#006838;  opacity: .9;border: 0;border-radius: 5px; color: #fff;font-weight: 500;text-align: center;cursor: pointer;box-sizing: border-box;margin-top:10px;}
+.btn_login:hover {background:#006838;transition:all 0.5s ease; color: #fff;  opacity: 1;}
+.btn_join{display: block;padding: 21px 0;background-color: #fff;border: 1px solid #888;text-align: center;color: #555;font-size: 1.125rem;}
+.auth_box{padding: 26px 0;}
+.auth_box ul li{float: left;width: 49%;text-align: center;border-right: 1px solid #ddd;}
+.auth_box ul li:last-child{border-right: none;}
+.auth_box ul li a{color:#666;transition: all 0.3s ease;}
+.auth_box ul li a:hover{text-decoration: underline;}
+
+
+
+/*약관동의*/
+.box.gray {background: #fafafa !important;}
+.user_policy .box_wrap .box {padding:30px; border:1px solid #ddd;}
+.user_policy .box_wrap .box h1 {font-size:1.3rem; font-family: 'GmarketSans'; font-weight: 500; margin-bottom:20px;}
+.user_policy .box_wrap .box .txt {background:#fff; border:1px solid #ddd; padding:20px; height:300px; overflow-y: auto; font-size: 1rem !important;}
+.user_policy .box_wrap .box .txt .con_tit {font-size: 1.1rem; margin-bottom:10px;}
+.user_policy .box_wrap .box label {margin-top:20px; font-weight: 500; font-size:1.1rem; color:#006838; cursor:pointer;}
+.user_policy .box_wrap .box label input {margin-right:7px;}
+
+
+
+/* checkbox */
+.checkbox {display: flex; align-items: center; margin: 10px 0;}
+.checkbox label {margin-left: 5px; font-size: .9375rem; color: #555; cursor: pointer;}
+.checkbox input[type="checkbox"] {display: flex; align-items: center; justify-content: center; padding: 4px; background: #fff; border: 1px solid #dedede; border-radius: 2px;}
+.checkbox input[type="checkbox"]::before {content: ""; display: block; width: 7px; height: 7px; transform: scale(0); transition: 120ms transform ease-in-out; box-shadow: inset 1em 1em #006838; transform-origin: bottom left; clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);}
+.checkbox input[type="checkbox"]:checked {border: 1px solid #006838;}
+.checkbox input[type="checkbox"]:checked::before {transform: scale(1);}
+.checkbox ul {display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center;}
+.checkbox ul li {display: flex; align-items: center;}
+.checkbox input[type="radio"] {display: flex; align-items: center; justify-content: center; padding: 3px; background: #fff; border: 1px solid #dedede; border-radius: 50%;}
+.checkbox input[type="radio"]::before {content: ""; width: 5px; height: 5px; transform: scale(0); transition: 120ms transform ease-in-out; box-shadow: inset 1em 1em #006838; background: #006838; border-radius: 50%;}
+.checkbox input[type="radio"]:checked {background: transparent; border: 1px solid #006838;}
+.checkbox input[type="radio"]:checked::before {transform: scale(1);}
+
+
+
+/* table */
+.tbl_wrap .tbl {width: 100%; border-top:2px solid #111;}
+.tbl_wrap .tbl tr {border-bottom: 1px solid #dedede;}
+.tbl_wrap .tbl tr th {padding: 20px;font-size: 1rem;color: #333; font-weight: 700;background: #f4f7f9;border-right: 1px solid #d9d9d9;text-align: center;white-space: nowrap;}
+.tbl_wrap .tbl tr th:last-child {border-right: 0;}
+.tbl_wrap .tbl tr td {padding: 20px; font-size: 1rem; color: #333; font-weight: 400; background: #fff; border-right: 1px solid #dedede; text-align: left;}
+.tbl_wrap .tbl tr td:last-child {border-right: 0;}
+
+
+
+/* 회원가입 form */
+.red {color: #d32f2f;}
+.inform .tbl_wrap .tbl tr th span {display: inline-block; color:red;}
+.inform .tbl_wrap .tbl tr td input {padding:15px; border:1px solid #ccc; margin-right:5px;}
+.inform .tbl_wrap .tbl tr td ul input[type="radio"],.tbl_wrap .tbl tr td input[type="checkbox"] {position:relative; display:inline-block; vertical-align: -3px; cursor: pointer;}
+.inform .tbl_wrap .tbl tr td ul input[type="radio"] {padding:7px;}
+.inform .tbl_wrap .tbl tr td input[type="checkbox"] {padding:5px;}
+.inform .tbl_wrap .tbl tr td ul input[type="radio"]:before {width:7px; height:7px;}
+.inform .tbl_wrap .tbl tr td ul input[type="radio"]:checked::before {position:absolute; top:50%; left:50%; color:#006838; transform: translate(-50%,-50%);}
+.inform .tbl_wrap .tbl tr td input[type="text"],.inform .tbl_wrap .tbl tr td input[type="password"],.inform .tbl_wrap .tbl tr td input[type="email"]  {max-width:300px; width: 100%;}
+
+.inform .tbl_wrap .tbl tr td.address input:first-child {width:175px;}
+.inform .tbl_wrap .tbl tr td.address input {display:block;}
+
+ul.chk_list li {font-size: .9rem; line-height: 1.5; padding-left: 17px; position: relative; text-align: left; margin: 5px 0;}
+ul.chk_list li::before {content: ""; position: absolute; left: 0; top: 5px; width: 12px; height: 12px; padding: 2px; background: #006838 url(../images/contents/ico_check.svg) center center no-repeat; background-size: 80%; border-radius: 50%;}
+ul.chk_list li span {color:#666; font-size:14px;}
+
+.inform .tbl_wrap .tbl tr td .btn_area {width:auto; margin-top:0;}
+
