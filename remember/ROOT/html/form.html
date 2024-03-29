@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/contents.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hd">
+            <div class="wrapper">
+                <div class="logo"><a href="../index.html"><img src="../images/layout/logo.jpg" alt="기억하는 숲 치매 예방 웹"></a>
+                </div>
+                <ul class="util">
+                    <li><a href="./login.html"><i><img src="../images/layout/ico_secret.svg" alt="자물쇠 아이콘"></i>로그인</a>
+                    </li>
+                    <li><a href="/"><i><img src="../images/layout/ico_person.svg" alt="사람 아이콘"></i>회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul class="wrapper">
+                <li><a href="../introduce.html">기억하는 숲 소개</a></li>
+                <li><a href="../businessarea.html">사업영역</a></li>
+                <li><a href="../program.html">프로그램</a></li>
+                <li><a href="#none">정보나눔</a></li>
+                <li><a href="#none">커뮤니티</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sub visual -->
+    <div class="sub_visual">
+        <div class="wrapper">
+            <h3>치매, <span>관심</span>이라는 새싹이 자라면<br><span>예방</span>이라는 꽃을 피웁니다.</h3>
+        </div>
+    </div>
+
+    <div class="inner">
+        <div class="wrapper">
+            <!-- lnb -->
+            <div class="lnb">
+                <h3>회원가입</h3>
+                <ul class="lnb_depth">
+                    <li><a href="#none" class="active">회원가입</a></li>
+                </ul>
+            </div>
+            <!-- contents -->
+            <div class="contents">
+                <div class="cnt_top">
+                    <h3>회원가입</h3>
+                    <ul class="location">
+                        <li><img src="../images/contents/ico_home.svg" alt="홈"></li>
+                        <li>회원가입</li>
+                    </ul>
+                </div>
+                <div class="cnt_bottom">
+                    <div class="inform">
+                        <div class="info_box">
+                            <div class="inner">
+                                <h5>안내사항</h5>
+                                <ul class="dot_list">
+                                    <li>이름, 휴대전화, 이메일은 아이디 및 비밀번호 분실 시 필요한 정보입니다.</li>
+                                    <li><span style="color:red;">*</span>표시는 필수 입력항목입니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="box_tit">회원정보입력</h3>
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>이름<span>*</span></th>
+                                        <td class="text-left">
+                                            <input type="text" id="name" name="name" placeholder="이름을 입력하세요."
+                                                class="require" data-label="이름">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>아이디<span>*</span></th>
+                                        <td class="text-left">
+                                            <div class="flex">
+                                                <input type="text" id="name" name="name" placeholder="아이디를 입력하세요." class="require" data-label="아이디">
+                                                <div class="btn_area"><a href="" class="btn st00">중복확인</a></div>
+                                            </div>
+                                        
+                                            <ul class="chk_list">
+                                                <li><span class="guide_txt">대소문자, 숫자 조합으로 공백없이 4~12자리</span></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>비밀번호<span>*</span></th>
+                                        <td class="text-left">
+                                            <input type="password" placeholder="비밀번호를 입력하세요." class="require" data-label="비밀번호">
+                                            <ul class="chk_list">
+                                                <li><span class="guide_txt">대소문자, 숫자 조합으로 공백없이 4~12자리</span></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>비밀번호 확인<span>*</span></th>
+                                        <td class="text-left">
+                                            <input type="password" placeholder="비밀번호 확인">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>우편번호</th>
+                                        <td class="text-left address">
+                                            <div class="flex">
+                                                <input type="number" id="address" name="address" placeholder="우편번호">
+                                                <div class="btn_area"><a href="" class="btn st00">우편번호</a></div>
+                                            </div>
+                                            <input type="text" id="address" name="address" placeholder="주소" class="mt5">
+                                            <input type="text" id="address" name="address" placeholder="상세주소" class="mt5">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>연락처<span>*</span></th>
+                                        <td class="text-left">
+                                            <div class="flex flex-wrap">
+                                                <input type="text" id="tel" name="tel" placeholder="-를 제외하고 입력해주세요.">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일</th>
+                                        <td class="text-left">
+                                            <div class="flex flex-wrap">
+                                                <input type="email" id="email" name="email" placeholder="예시) tree@naver.com">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 class="box_tit mt30">보호자 정보입력</h3>
+                        <p class="red mb10">* 80세 이상은 보호자 연락처 필수 입력</p>
+                        <div class="tbl_wrap">
+                            <table class="tbl">
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>보호자 연락처</th>
+                                    <td class="text-left">
+                                        <input type="text" id="guard_tel" name="guard_tel" placeholder="보호자 연락처를 입력하세요.( - 제외 )">
+                                        <ul class="chk_list">
+                                            <li><span class="guide_txt">입력시 보호자 연락처도 함께 문자가 발송됩니다.</span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_area big mt50">
+                            <a href=""  class="btn st01">회원가입</a>
+                            <a href="" class="btn st03">취소하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="lf"><img src="../images/layout/ft_logo.png" alt="기억하는숲 치매 예방 웹"></div>
+            <div class="rt">
+                <ul class="info">
+                    <li>회사명 : 기억하는숲</li>
+                    <li>대표자명 : ABO</li>
+                    <li>주소 : 충청남도 천안시 서북구 성환읍 대학로 91 </li>
+                    <li>사업자등록번호 : 123-45-67890</li>
+                </ul>
+                <ul class="info">
+                    <li>E-mail : forest12@forest.co.kr</li>
+                    <li>Tel : 041-580-2000</li>
+                    <li>Fax : 041-580-2000</li>
+                </ul>
+                <p class="copyright">COPYRIGHT © FOREST. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 공통 */
+.wrapper {width: 1400px; margin: 0 auto;}
+
+/* 헤더 */
+header {width: 100%;}
+header .hd {padding: 13px 0;}
+header .hd .wrapper {position: relative;}
+header .hd .wrapper .logo a {display: flex; align-items: center; justify-content: center;}
+header .hd .util {position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: flex; align-items: center; border: 1px solid #ddd;}
+header .hd .util li + li {border-left: 1px solid #ddd;}
+header .hd .util li a {display: inline-block; padding: 16px 28px; min-width: 112px; font-size: 14px; color: #666;}
+header .hd .util li a i {margin-right: 10px;}
+header .hd .util li a i img {vertical-align: middle;}
+header nav {width: 100%; background: #006838; padding: 18px 0;}
+header nav ul { display: flex; align-items: center; justify-content: space-between;}
+header nav ul li a {color: #fff; font-size: 1.25rem;}
+
+/* 푸터 */
+footer {background: #2F3034;}
+footer .wrapper {padding: 50px 0; display: flex; align-items: center; gap: 30px;}
+footer .wrapper .info {display: flex; margin-bottom: 10px;}
+footer .wrapper .info li {color: #ccc; font-size: 16px; line-height: 1.2; font-weight: 300;}
+footer .wrapper .info li + li {padding-left: 10px; margin-left: 10px; border-left: 1px solid #ccc;}
+footer .wrapper .copyright {color: #9E9E9E; font-size: 14px; font-weight: 300; margin-top: 20px;}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기억하는 숲</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/contents.css">
+    <script src="./js/jquery.min.js"></script>
+    <script>  
+        function expandImage(img) {
+            if (img.style.width === "400px") {
+                img.style.width = "auto"; // 이미지를 원래 크기로 되돌림
+                img.style.height = "auto"; // 이미지를 원래 크기로 되돌림
+            } else {
+                img.style.width = "400px"; // 확대할 너비 지정
+                img.style.height = "auto"; // 가로 세로 비율 유지
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="hd">
+            <div class="wrapper">
+                <div class="logo"><a href="./index.html"><img src="./images/layout/logo.jpg" alt="기억하는 숲 치매 예방 웹"></a></div>
+                <ul class="util">
+                    <li><a href="#none"><i><img src="./images/layout/ico_secret.svg" alt="자물쇠 아이콘"></i>로그인</a></li>
+                    <li><a href="#none"><i><img src="./images/layout/ico_person.svg" alt="사람 아이콘"></i>회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul class="wrapper">
+                <li><a href="./introduce.html">기억하는 숲 소개</a></li>
+                <li><a href="./businessarea.html">사업영역</a></li>
+                <li><a href="./program.html">프로그램</a></li>
+                <li><a href="#none">정보나눔</a></li>
+                <li><a href="#none">커뮤니티</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sub visual -->
+    <div class="sub_visual">
+        <div class="wrapper">
+            <h3>치매, <span>관심</span>이라는 새싹이 자라면<br><span>예방</span>이라는 꽃을 피웁니다.</h3>
+        </div>
+    </div>
+
+    <div class="inner">
+        <div class="wrapper">
+            <!-- lnb -->
+            <div class="lnb">
+                <h3>프로그램</h3>
+                <ul class="lnb_depth">
+                    <li><a href="#none" class="active">치매의 검사</a></li>              
+                </ul>
+            </div>
+            <!-- contents -->
+            <div class="contents">
+                <!-- 치매의 검사 -->
+                <div class="cnt_top">
+                    <h3>치매의 검사</h3>
+                    <ul class="location">
+                        <li><img src="./images/contents/ico_home.svg" alt="홈"></li>
+                        <li>프로그램</li>
+                        <li>치매의 검사</li>
+                    </ul>
+                </div>
+                <div class="cnt_bottom">
+                    <div class="program">
+                        <div class="cnt_box">
+                            <div class="txt_box">
+                                <h4 class="box_tit">치매선별검사</h4>
+                                <p>
+                                    치매 선별 검사는 설문지를 이용한 검사로 이루어지며 MMSE-K, K-CIST, K-MoCA 등이 있습니다.<br>
+                                    이 중 MMSE 검사와 MoCA 검사가 가장 많이 이용되고 있으며 전 세계적으로 같은 검사를 하게 됩니다.<br>
+                                    검사명에서 ‘-K’는 해당 검사의 한국어 버전이라는 뜻이 됩니다.<br>
+                                    이외에도 <b>SDQ, 하세가와 검사</b> 등이 치매의 선별 검사에 이용됩니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cnt_box">
+                            <h4 class="tit">치매 선별검사에 대한 예시</h4>
+                            <p>치매 선별 검사에서는 환자가 치매인지, 경도인지장애인지, 정상인지를 선별하는 것으로 선별 검사에서 문제가 발견되면 환자의 상태를 조금 더 자세히 알아보는 치매 진단
+                                검사를 시행하게 됩니다. 아래 이미지는 간단한 치매 선별검사입니다.
+                            </p>
+                        </div>
+                        <div class="cnt_box">
+                            <div class="refer">
+                                <span class="refer mt30 mb10">*클릭시 이미지가 축소/확대됩니다*</span>
+                                <a href="./images/contents/smallimage.jpg"  target="_blank" class="program_img"><img src="./images/contents/smallimage.jpg" alt="치매 선별검사"></a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="lf"><img src="./images/layout/ft_logo.png" alt="기억하는숲 치매 예방 웹"></div>
+            <div class="rt">
+                <ul class="info">
+                    <li>회사명 : 기억하는숲</li>
+                    <li>대표자명 : ABO</li>
+                    <li>주소 : 충청남도 천안시 서북구 성환읍 대학로 91 </li>
+                    <li>사업자등록번호 : 123-45-67890</li>
+                </ul>
+                <ul class="info">
+                    <li>E-mail : forest12@forest.co.kr</li>
+                    <li>Tel : 041-580-2000</li>
+                    <li>Fax : 041-580-2000</li>
+                </ul>
+                <p class="copyright">COPYRIGHT © FOREST. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
